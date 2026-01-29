@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Contact() {
     return (
-        <section className="relative w-full py-20 lg:py-32 bg-primary overflow-hidden flex flex-col items-center justify-center text-center">
+        <section id="contact" className="relative w-full py-20 lg:py-32 bg-primary overflow-hidden flex flex-col items-center justify-center text-center">
 
             {/* Background Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[150px] pointer-events-none" />

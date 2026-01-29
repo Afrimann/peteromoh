@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const roles = ["A Developer", "A Designer", "An Innovator"];
 
@@ -95,17 +96,17 @@ export default function Hero() {
                     transition={{ delay: 1, duration: 0.8 }}
                     className="mt-10 md:mt-12 flex flex-col sm:flex-row gap-4 md:gap-6 w-full sm:w-auto"
                 >
-                    <button className="group relative px-8 py-4 bg-secondary text-primary font-bold text-lg rounded-full overflow-hidden transition-all hover:scale-105 w-full sm:w-auto flex justify-center">
+                    <Link href="#projects" className="group relative px-8 py-4 bg-secondary text-primary font-bold text-lg rounded-full overflow-hidden transition-all hover:scale-105 w-full sm:w-auto flex justify-center">
                         <span className="relative z-10 flex items-center gap-2">
                             EXPLORE WORK
                             <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                         </span>
                         <div className="absolute inset-0 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500 ease-out" />
-                    </button>
+                    </Link>
 
-                    <button className="px-8 py-4 border border-white/20 text-white rounded-full hover:bg-white/10 transition-all font-medium tracking-wide w-full sm:w-auto">
+                    <Link href="#contact" className="px-8 py-4 border border-white/20 text-white rounded-full hover:bg-white/10 transition-all font-medium tracking-wide w-full sm:w-auto text-center flex items-center justify-center">
                         CONTACT ME
-                    </button>
+                    </Link>
                 </motion.div>
             </motion.div>
 

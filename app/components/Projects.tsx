@@ -46,7 +46,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section className="relative w-full py-20 lg:py-32 bg-primary dark text-white overflow-hidden">
+        <section id="projects" className="relative w-full py-20 lg:py-32 bg-primary dark text-white overflow-hidden">
             {/* Background Elements */}
             <div className="absolute top-[20%] left-[-10%] w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[120px] pointer-events-none" />
             <div className="absolute bottom-[20%] right-[-10%] w-[500px] h-[500px] bg-accent/10 rounded-full blur-[100px] pointer-events-none" />
