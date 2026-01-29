@@ -5,7 +5,7 @@ import { useEffect, useState, useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
-const roles = ["Developer", "Designer", "Innovator"];
+const roles = ["A Developer", "A Designer", "An Innovator"];
 
 export default function Hero() {
     const [roleIndex, setRoleIndex] = useState(0);
@@ -37,7 +37,7 @@ export default function Hero() {
             {/* Content Left */}
             <motion.div
                 style={{ y, opacity }}
-                className="relative z-20 flex-1 flex flex-col justify-center items-center lg:items-start text-center lg:text-left pt-20 lg:pt-0 w-full"
+                className="relative z-20 w-full flex-1 flex flex-col justify-center items-center lg:items-start text-center lg:text-left pt-20 lg:pt-0"
             >
                 <div className="absolute inset-0 bg-linear-to-r from-primary/80 to-transparent lg:hidden z-[-1]" /> {/* Mobile readbility mask */}
 
@@ -47,7 +47,7 @@ export default function Hero() {
                     transition={{ duration: 1, ease: "circOut" }}
                     className="w-full"
                 >
-                    <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl w-full font-black text-secondary tracking-tighter leading-[0.9]">
+                    <h1 className="text-7xl md:text-8xl lg:text-9xl w-full font-black text-secondary tracking-tighter leading-[0.9]">
                         I BUILD <br />
                         <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-blue-400">
                             DIGITAL
@@ -64,7 +64,7 @@ export default function Hero() {
                 >
                     <div className="h-[2px] w-8 md:w-12 bg-accent" />
                     <span className="text-lg md:text-2xl text-gray-300 font-light tracking-widest uppercase">
-                        I am a{" "}
+                        I am {" "}
                         <motion.span
                             key={roleIndex}
                             initial={{ y: 20, opacity: 0 }}
@@ -108,12 +108,12 @@ export default function Hero() {
                 {/* Gradient Mask for fading image into black */}
                 <div className="absolute inset-0 z-20 bg-linear-to-t from-primary via-transparent to-transparent lg:bg-linear-to-l lg:from-transparent lg:via-transparent lg:to-primary" />
 
-                <div className="relative w-full h-[80%] lg:h-[90%] max-w-2xl translate-y-0 lg:translate-x-10 grayscale contrast-125 brightness-110">
+                <div className="relative w-full h-full lg:h-[90%] max-w-2xl translate-y-0 lg:translate-x-10 grayscale contrast-125 brightness-110">
                     <Image
-                        src="/hero-portrait.png"
+                        src="/peter.JPG"
                         alt="Portrait"
                         fill
-                        className="object-cover object-bottom"
+                        className="object-cover object-[center_-100px] md:object-[center_-150px] "
                         priority
                     />
                 </div>
