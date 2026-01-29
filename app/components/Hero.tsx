@@ -34,13 +34,24 @@ export default function Hero() {
                 <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-white/5 rounded-full blur-[100px] opacity-20" />
             </div>
 
+            {/* Architectural Name Watermark */}
+            <motion.div
+                style={{ y: useTransform(scrollYProgress, [0, 1], ["0%", "20%"]) }}
+                className="absolute inset-0 flex flex-col justify-center items-center z-0 pointer-events-none select-none overflow-hidden opacity-5"
+            >
+                <div className="whitespace-nowrap font-black text-[15rem] md:text-[25rem] lg:text-[35rem] leading-[0.8] tracking-tighter text-transparent [-webkit-text-stroke:2px_white] lg:[-webkit-text-stroke:4px_white] blur-[2px]">
+                    PETER
+                </div>
+                <div className="whitespace-nowrap font-black text-[15rem] md:text-[25rem] lg:text-[35rem] leading-[0.8] tracking-tighter text-transparent [-webkit-text-stroke:2px_white] lg:[-webkit-text-stroke:4px_white] blur-[2px] ml-[20%]">
+                    OMOTOSHO
+                </div>
+            </motion.div>
+
             {/* Content Left */}
             <motion.div
                 style={{ y, opacity }}
                 className="relative z-20 w-full flex-1 flex flex-col justify-center items-center lg:items-start text-center lg:text-left pt-20 lg:pt-0"
             >
-                <div className="absolute inset-0 bg-linear-to-r from-primary/80 to-transparent lg:hidden z-[-1]" /> {/* Mobile readbility mask */}
-
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}

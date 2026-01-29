@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { Code, Palette, Rocket } from "lucide-react";
 
 const stats = [
-    { label: "Years of Experience", value: "5+" },
-    { label: "Projects Contributions", value: "50+" },
-    { label: "Satisified Clients", value: "30+" },
+    { label: "Years of Experience", value: "3+" },
+    { label: "Projects Contributions", value: "30+" },
+    { label: "Satisified Clients", value: "20+" },
 ];
 
 const cards = [
@@ -64,7 +64,7 @@ export default function About() {
                         className="space-y-6 text-lg text-gray-400 leading-relaxed"
                     >
                         <p>
-                            I am a passionate creative developer and designer with a knack for building immersive web experiences. My journey began with a curiosity for how things work on the web, which quickly evolved into a career defined by continuous learning and innovation.
+                            I am <span className="text-white font-bold">Peter Omotosho</span>, a passionate creative developer and designer with a knack for building immersive web experiences. My journey began with a curiosity for how things work on the web, which quickly evolved into a career defined by continuous learning and innovation.
                         </p>
                         <p>
                             I believe that great design is not just about how something looks, but how it works and feels. By bridging the gap between design and engineering, I create products that are not only beautiful but also performant and accessible.
